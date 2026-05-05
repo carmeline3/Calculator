@@ -1,4 +1,14 @@
-const numberButtons = document.querySelectorAll('[data-number]')
-const operationButtons = document.querySelectorAll('[data-operator]')
-const equalsButtons = document.querySelectorAll('[data-number]')
-const deleteButtons = document.querySelectorAll('[data-delete]')
+// const display = documentgetElementById("display");
+
+// function appendToDisplay(input) {
+//     display.value += input;
+// }
+
+// function clearDisplay() {
+//     display.value = "";
+
+// }
+
+// function calculate() {
+//     display.value = eval(display.value);
+// }

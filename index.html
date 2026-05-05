@@ -6,35 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
     <form>
 
         <div class="background">
-            <div class="screen">
-                <!-- <div class="number">
+             <input id="display" readonly>
+                <!-- <div id="keys">
+                    
+                </div> -->
+           
+            
 
-</div>
-
-<div class="results">
-
-</div> -->
-            </div>
-
-            <div class="button">
+            <div class="keys">
                 <div class="first-row">
                     <div class="first-block">
-                        <button data-operation>+/-</button>
+                       <input type="button" value="+" onclick="display.value +='+' " class="bblocker">
                     </div>
                     <div class="first-block">
-                        <button data-operation>%</button>
+                        <input type="button" value="%" onclick="display.value +='%' " class="bblocker">
                     </div>
                     <div class="first-block">
-                        <button data-operation><span class="symbol">&radic;</span></button>
+                       <input type="button" value="&radic;" onclick="display.value +='&radic;' " class="bblocker">   
                     </div>
                     <div class="first-block">
-                        <button data-delete>CC</button>
+                       <input type="button" value="CC" onclick="display.value ='' " class="bblocker">
                     </div>
 
                 </div>
@@ -44,60 +42,61 @@
 
 
                     <div class="nd-block">
-                        <button data-number>7</button>
+                        <input type="button" value="7" onclick="display.value +='7' " class="bb">
                     </div>
                     <div class="nd-block">
-                        <button data-number>8</button>
+                       <input type="button" value="8" onclick="display.value +='8' " class="bb">
                     </div>
                     <div class="nd-block">
-                        <button data-number>9</button>
+                       <input type="button" value="9" onclick="display.value +='9' " class="bb">
                     </div>
                     <div class="nd-blocker">
-                        <button data-operation>*</button>
+                       <input type="button" value="*" onclick="display.value +='*' " class="bblock">
+                       
                     </div>
                 </div>
 
                 <div class="third-row">
                     <div class="third-block">
-                        <button data-number>4</button>
+                       <input type="button" value="4" onclick="display.value +='4' " class="bb">
                     </div>
                     <div class="third-block">
-                        <button data-number>5</button>
+                       <input type="button" value="5" onclick="display.value +='5' " class="bb">
                     </div>
                     <div class="third-block">
-                        <button data-number>6</button>
+                      <input type="button" value="6" onclick="display.value +='6' " class="bb">
                     </div>
                     <div class="third-blocker">
-                        <button data-operation>-</button>
+                       <input type="button" value="-" onclick="display.value +='-' " class="bblocker">
                     </div>
                 </div>
                 <div class="forth-row">
                     <div class="forth-block">
-                        <button data-number>1</button>
+                       <input type="button" value="1" onclick="display.value +='1' " class="bb">
                     </div>
                     <div class="forth-block">
-                        <button data-number>2</button>
+                        <input type="button" value="2" onclick="display.value +='2' " class="bb">
                     </div>
                     <div class="forth-block">
-                        <button data-number>3</button>
+                        <input type="button" value="3" onclick="display.value +='3' " class="bb">
                     </div>
                     <div class="forth-blocker">
-                        <button>( )</button>
+                     <input type="button" value="/" onclick="display.value +='/' " class="bblocker">
                     </div>
                 </div>
                 <div class="fifth-row">
                     <div class="fifth-block">
-                        <button data-number>0</button>
+                       <input type="button" value="0" onclick="display.value +='0' " class="bb">
                     </div>
                     <div class="fifth-block">
-                        <button data-number>.</button>
+                           <input type="button" value="." onclick="display.value +='.' " class="bb">
                     </div>
                     <div class="fifth-block">
-                        <button data-equals>+</button>
+                           <input type="button" value="+" onclick="display.value +='+' " class="bb">
 
                     </div>
                     <div class="fifth-blocker">
-                        <button>=</button>
+                           <input type="button" value="=" onclick="display.value = eval(display.value) " class="bblocker">
                     </div>
                 </div>
 
@@ -108,6 +107,7 @@
 
         </div>
     </form>
+      <script src="index.js"></script>
 </body>
 
 </html>
