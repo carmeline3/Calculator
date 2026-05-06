@@ -67,7 +67,7 @@ body{
    width: 6vw;
      min-height: 8vh;
     background-color: rgb(103, 71, 111); 
-    border: 3px solid rgb(95, 6, 95);
+  border:none;
 
 }
 
@@ -91,11 +91,12 @@ body{
 
 }
 
-.nd-blocker>.bblock{
+.nd-blocker>.bblocker{
     
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: center;
+border: none;
    width: 6vw;
     min-height: 8vh;
    background-color: rgb(103, 71, 111);
@@ -153,9 +154,10 @@ border: none;
     display: flex;
     align-items: center;
     justify-content: center;
+border: none;
    width: 6vw;
     min-height: 8vh;
-    background-color: rgb(103, 71, 111);  
+   background-color: rgb(103, 71, 111);
 
 }
 .fifth-row{
@@ -205,28 +207,61 @@ border: none;
       background-color: hsl(292, 41%, 55%);
 }
 
-@media(max-width:750px){
+/* .keys{
+    width: 60vw;
+    border:2px solid red;
+} */
+@media(max-width:920px){
     .background{
-         min-width: 70vw;
+         min-width: 60vw;
     min-height: 30vh;
     margin: 2px;
     }
 
 
     #display{
-        min-width: 60vw;
+        min-width: 50vw;
     }
-    /* .first-block>.bblocker{
-        min-width: 10vw;
-    } */
+   
+
+    .keys{
+        padding-left: 3px;
+        width: 40vw;
+    }
    
    p{
  font-size:20px;
 }
+
+.bb{
+    min-width: 8vw;
+    gap:2px;
+}
+
+.bblocker{
+     min-width: 8vw;
+}
+
 }
 
 @media(max-width:420px){
+    .keys{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+       
+    }
    p{
  font-size:15px;
 }
+.bb{
+    min-width: 10vw;
+    gap:2px;
+}
+
+.bblocker{
+     min-width: 10vw;
+}
+
+
 }
