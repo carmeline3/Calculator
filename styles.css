@@ -235,19 +235,22 @@ border: none;
 }
 
 .bb{
-    min-width: 10vw;
+    min-width: 12vw;
     gap:2px;
 }
 
 .bblocker{
-     min-width: 10vw;
+     min-width: 12vw;
 }
 
 }
 
 @media(max-width:420px){
+    #display{
+        min-width:70vw;
+    }
     .keys{
-        width: 55vw;
+        width: 70vw;
         display: flex;
         flex-direction: column;
        
@@ -259,9 +262,11 @@ border: none;
     min-width: 12vw;
     gap:2px;
 }
-
+.bb{
+   min-width: 16vw;  
+}
 .bblocker{
-     min-width: 12vw;
+     min-width: 16vw;
 }
 
 
