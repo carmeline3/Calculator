@@ -1,113 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-    <form>
 
-        <div class="background">
-             <input id="display" readonly>
-                <!-- <div id="keys">
-                    
-                </div> -->
-           
+    <div class="calculator">
+
+        <input type="text" id="display" readonly>
+
+        <div class="buttons">
+
             
-
-            <div class="keys">
-                <div class="first-row">
-                    <div class="first-block">
-                       <input type="button" value="+" onclick="display.value +='+' " class="bblocker">
-                    </div>
-                    <div class="first-block">
-                        <input type="button" value="%" onclick="display.value +='%' " class="bblocker">
-                    </div>
-                    <div class="first-block">
-                       <input type="button" value="De" onclick="display.value = display.value.toString().slice(0,-1) " class="bblocker">   
-                    </div>
-                    <div class="first-block">
-                       <input type="button" value="C" onclick="display.value ='' " class="bblocker">
-                    </div>
-
-                </div>
-
-
-                <div class="nd-row">
-
-
-                    <div class="nd-block">
-                        <input type="button" value="7" onclick="display.value +='7' " class="bb">
-                    </div>
-                    <div class="nd-block">
-                       <input type="button" value="8" onclick="display.value +='8' " class="bb">
-                    </div>
-                    <div class="nd-block">
-                       <input type="button" value="9" onclick="display.value +='9' " class="bb">
-                    </div>
-                    <div class="nd-blocker">
-                       <input type="button" value="*" onclick="display.value +='*' " class="bblocker">
-                       
-                    </div>
-                </div>
-
-                <div class="third-row">
-                    <div class="third-block">
-                       <input type="button" value="4" onclick="display.value +='4' " class="bb">
-                    </div>
-                    <div class="third-block">
-                       <input type="button" value="5" onclick="display.value +='5' " class="bb">
-                    </div>
-                    <div class="third-block">
-                      <input type="button" value="6" onclick="display.value +='6' " class="bb">
-                    </div>
-                    <div class="third-blocker">
-                       <input type="button" value="-" onclick="display.value +='-' " class="bblocker">
-                    </div>
-                </div>
-                <div class="forth-row">
-                    <div class="forth-block">
-                       <input type="button" value="1" onclick="display.value +='1' " class="bb">
-                    </div>
-                    <div class="forth-block">
-                        <input type="button" value="2" onclick="display.value +='2' " class="bb">
-                    </div>
-                    <div class="forth-block">
-                        <input type="button" value="3" onclick="display.value +='3' " class="bb">
-                    </div>
-                    <div class="forth-blocker">
-                     <input type="button" value="/" onclick="display.value +='/' " class="bblocker">
-                    </div>
-                </div>
-                <div class="fifth-row">
-                    <div class="fifth-block">
-                       <input type="button" value="0" onclick="display.value +='0' " class="bb">
-                    </div>
-                    <div class="fifth-block">
-                           <input type="button" value="." onclick="display.value +='.' " class="bb">
-                    </div>
-                    <div class="fifth-block">
-                           <input type="button" value="+" onclick="display.value +='+' " class="bb">
-
-                    </div>
-                    <div class="fifth-blocker">
-                           <input type="button" value="=" onclick="display.value = eval(display.value) " class="bblocker">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-
+            <input type="button" value="&#8730;" class="scientific"onclick="squareRoot()">
+            <input type="button" value="x^" class="scientific" onclick="getOperator('x^')">
+            <input type="button" value="&#960;" class="scientific" onclick="">
+          <input type="button" value="x&#178;" class="scientific" onclick="squareNumber()">
+            <input type="button" value="C" class="operator"onclick="clearDisplay()">
+            <input type="button" value="DE" class="operator" onclick="getOperator('')">
+            <input type="button" value="(" class="operator" onclick="getOperator('')">
+            <input type="button" value=")" class="operator" onclick="getOperator('')">
+            <input type="button" value="7" class="number"  onclick="getNumber(7)">
+            <input type="button" value="8" class="number"  onclick="getNumber(8)">
+            <input type="button" value="9" class="number"  onclick="getNumber(9)">
+            <input type="button" value="/" class="operator" onclick="getOperator('/')">
+            <input type="button" value="4" class="number"  onclick="getNumber(4)">
+            <input type="button" value="5" class="number"  onclick="getNumber(5)">
+            <input type="button" value="6" class="number"  onclick="getNumber(6)">
+            <input type="button" value="*" class="operator" onclick="getOperator('*')">
+            <input type="button" value="1" class="number"  onclick="getNumber(1)">
+            <input type="button" value="2" class="number"  onclick="getNumber(2)">
+            <input type="button" value="3" class="number"  onclick="getNumber(3)">
+            <input type="button" value="-" class="operator" onclick="getOperator('-')">
+            <input type="button" value="0" class="number"  onclick="getNumber(0)">
+            <input type="button" value="." class="number" onclick="getNumber('.')">
+            <input type="button" value="=" class="equal"  onclick="calculateResult()">
+            <input type="button" value="+" class="operator" onclick="getOperator('+')">
 
         </div>
-    </form>
-      <!-- <script src="index.js"></script> -->
+
+    </div>
+<script src="index.js"></script>
 </body>
-
 </html>
